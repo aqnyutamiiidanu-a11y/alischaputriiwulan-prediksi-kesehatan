@@ -9,7 +9,6 @@ try:
     model = joblib.load("model.pkl")
 except Exception as e:
     st.error(f"Error detail: {e}")
-    st.stop()
 
 st.title("Prediksi Kesehatan")
 
