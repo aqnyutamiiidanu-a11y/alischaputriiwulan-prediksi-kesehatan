@@ -1,3 +1,2 @@
 import joblib
-
 joblib.dump(best_model, "model.pkl")
