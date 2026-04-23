@@ -5,11 +5,12 @@ import numpy as np
 import sklearn
 
 # 1. Pastikan model dimuat dengan benar di luar try-except atau tangani dengan baik
+# Load model
 try:
     model = joblib.load("model.pkl")
 except Exception as e:
-    st.error(f"Gagal memuat model.pkl: {e}")
-    st.info("Pastikan file model.pkl sudah diunggah ke GitHub di folder yang sama dengan app.py")
+    st.error(f"Error detail: {e}")
+    st.stop()  # WAJIB pakai tanda kurung () agar aplikasi benar-benar berhenti di sini
     st.stop() # Menghentikan aplikasi agar tidak lanjut ke baris prediksi yang error
 
 # 2. Bagian input data (pastikan variabel input_data sudah didefinisikan sebelumnya)
