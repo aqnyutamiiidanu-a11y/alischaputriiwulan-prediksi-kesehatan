@@ -1,14 +1,8 @@
 import streamlit as st
 import joblib
 import pandas as pd
-import streamlit as st
-import joblib
-import pandas as pd
 import numpy as np
-import sklearn  # Tambahkan ini untuk memastikan library terdeteksi
-
-# Load model
-model = joblib.load("model.pkl")
+import sklearn  # Sangat penting jika Anda menggunakan model Scikit-Learn
 
 # Load model
 model = joblib.load("model.pkl")
