@@ -2,7 +2,7 @@ import streamlit as st
 import joblib
 import pandas as pd
 import numpy as np
-import sklearn  # Sangat penting jika Anda menggunakan model Scikit-Learn
+import sklearn
 
 # Load model
 try:
