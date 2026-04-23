@@ -31,3 +31,8 @@ if st.button("Predict"):
     prediction = model.predict(input_data)
 
     st.success(f"Hasil Prediksi: {prediction[0]}")
+
+try:
+    model = joblib.load("model.pkl")
+except Exception as e:
+    st.error(f"Error memuat model: {e}")
